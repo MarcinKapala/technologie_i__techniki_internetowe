@@ -4,3 +4,6 @@
 2,49 GB pomniejszone o narzut ethernet/ip itp.
 przyjmuję 5%
 2,49 - 5 %= 2,36 GB
+Wnioski: 
+-rzeczywista wielkość pobranego pliku jest mniejsze ze względu na narzuty protokołów. 
+-przy przepustowości 300 mb/s można pobrać plik o wielkości 2,3/2,4 GB.
