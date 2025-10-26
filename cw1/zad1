@@ -1,6 +1,6 @@
 300 mb/s jaki plik w czasie 68s
-300 mb/s *68s = 2550 MB
-2550 * 1024 =2,49 GB
+20 400bm/8 = 2550 MB
+2550 / 1024 =2,49 GB
 2,49 GB pomniejszone o narzut ethernet/ip itp.
 przyjmuję 5%
 2,49 - 5 %= 2,36 GB
