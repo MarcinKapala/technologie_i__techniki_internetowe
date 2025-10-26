@@ -1,1 +1,13 @@
+Wykonanie przewodu sieciowego. 
+Sposób połączenia T568A
+Wyniki z testera: 
+1 - 4
+2 - 5
+3 - 7
+4 - 1
+5 - 2
+6 - 8 
+7 - 3
+8 - 6 
+Na testerze można zaobserwować sygnał na kazdym kablu, natomiast w jednym łączniku modularnym RJ45 kable włożone są odrwotnie(odbicie lustrzane).
 
