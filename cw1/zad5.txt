@@ -1,0 +1,80 @@
+strona onet.pl z wykorzystaniem polecenia tracert 
+over a maximum of 30 hops:
+
+  1    <1 ms    <1 ms    <1 ms  oxygen.lan [192.168.5.1]
+  2     1 ms     1 ms     1 ms  83-238-252-35.static.inetia.pl [83.238.252.35]
+  3     6 ms     6 ms     5 ms  KRAKH001RT09.inetia.pl [83.238.249.16]
+  4     6 ms     6 ms     6 ms  WARSH002RT91.inetia.pl [83.238.248.110]
+  5     6 ms     6 ms     *     83-238-248-125.static.inetia.pl [83.238.248.125]
+  6     6 ms     6 ms     6 ms  100.95.8.19
+  7     6 ms     6 ms     6 ms  100.95.8.16
+  8     6 ms     5 ms    12 ms  99.83.115.102
+  9     *        *        *     Request timed out.
+ 10     *        *        *     Request timed out.
+ 11     *        *        *     Request timed out.
+ 12     *        *        *     Request timed out.
+ 13     *        *        *     Request timed out.
+ 14     6 ms     5 ms     5 ms  server-13-227-146-19.waw51.r.cloudfront.net [13.227.146.19]
+
+Trace complete.
+strona nasa.com z wykorzystaniem polecenia tracert
+  1    <1 ms    <1 ms    <1 ms  oxygen.lan [192.168.5.1]
+  2     1 ms     1 ms     1 ms  83-238-252-35.static.inetia.pl [83.238.252.35]
+  3     6 ms     6 ms     6 ms  KRAKH001RT09.inetia.pl [83.238.249.16]
+  4     6 ms     6 ms     6 ms  WARSH002RT91.inetia.pl [83.238.248.110]
+  5     6 ms     6 ms     *     83-238-248-125.static.inetia.pl [83.238.248.125]
+  6     6 ms     6 ms     6 ms  100.95.8.19
+  7     6 ms     6 ms     6 ms  100.95.8.16
+  8    23 ms    27 ms    24 ms  interIx.1-ix.net [185.0.42.243]
+  9     *        *        *     Request timed out.
+ 10     *        *        *     Request timed out.
+ 11     *        *        *     Request timed out.
+ 12    32 ms    32 ms    32 ms  lag0-vl1011.core1-fra-ix.bb.wiit.network [89.163.136.209]
+ 13    35 ms    35 ms    34 ms  lag0-vl1001.core1-nbg-ncd.bb.wiit.network [85.14.244.114]
+ 14    34 ms    34 ms    34 ms  lag0-vl6.core2-nbg-ncd.bb.wiit.network [85.14.244.108]
+ 15    37 ms    37 ms    37 ms  lag0-vl1006.core2-muc2.bb.wiit.network [85.14.244.162]
+ 16    37 ms    37 ms    37 ms  85.14.244.131
+ 17    33 ms    33 ms     *     b1ti-vl8.muc01.net.internetx.com [217.64.170.213]
+ 18     *        *        *     Request timed out.
+ 19    33 ms    33 ms    33 ms  185.53.176.236
+ 20    33 ms    33 ms    33 ms  185.53.178.99
+
+Trace complete.
+
+strona  goggle.com z wykorzystaniem polecenia tracert
+C:\Users\sxuir>tracert www.goggle.com
+Unable to resolve target system name www.goggle.com.
+
+strona onet.pl z wykorzystaniem strony dnschecker.pl
+    kraje, gdzie znajduja sie serwsry
+United States
+caCanada
+deGermany
+ruRussian Federation
+dkDenmark
+gbUnited Kingdom
+nlNetherlands
+pkPakistan
+chSwitzerland
+trTurkey
+esSpain
+zaSouth Africa
+jpJapan
+myMalaysia
+inIndia
+frFrance
+mxMexico
+cnChina
+brBrazil
+auAustralia
+sgSingapore
+atAustria
+ieIreland
+krSouth Korea
+nzNew Zealand
+saSaudia Arabia
+bdBangladesh
+ptPortugal
+strona nasa.com z wykorzystaniem strony dns.checker.pl
+  
+
