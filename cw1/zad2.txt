@@ -1,0 +1,2 @@
+adres ip: 192.168.5.117
+adres  MAC: 40-16-7E-AB-D3-52
