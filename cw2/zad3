@@ -1,0 +1,3 @@
+1. Dns cache jest to tymczasowa baza danych  przechowywana przez system operacyjny.  Zawiera ona  informacje o nazwach domen oraz przypisanych  do nich  adresach ip.
+2. Komputer przechowuje adresy poniewaz odczyt adresu ip z lokalnej pamieci jest niemal natychmiastowwy. Dzieki temu strony internetowwe , które odwiedzamy często ładują się  znacznie szybciej. Dodatkowo komputer nie generuje zbednych zapytan do serwweroww DNS dostawcy internetu.
+Oszczędza to  pasmo sieciowe i zmniejsza obciazenie globalnej infrastrukturry DNS. Po wpisaniu zagranicznych domen(wikipedia, nasa w  przegladarke nie zapisywaly  sie w  pamieci cache. Dopiero  po wpisaniu  wp.pl moglem zobaczyc  wyniki.
