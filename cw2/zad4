@@ -1,0 +1,42 @@
+XML 
+<?xml version="1.0" encoding="UTF-8"?>
+<rejestracja>
+    <osoba id="1">
+        <imie>Jan</imie>
+        <nazwisko>Kowalski</nazwisko>
+        <plec>mężczyzna</plec>
+        <wiek>25</wiek>
+    </osoba>
+    <osoba id="2">
+        <imie>Anna</imie>
+        <nazwisko>Nowak</nazwisko>
+        <plec>kobieta</plec>
+        <wiek>30</wiek>
+    </osoba>
+</rejestracja>
+XSD
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="rejestracja">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="osoba" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="imie" type="xs:string"/>
+              <xs:element name="nazwisko" type="xs:string"/>
+              <xs:element name="plec" type="xs:string"/>
+              <xs:element name="wiek" type="xs:integer"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+link do zrzutu ekranu 
+
+
+link 
