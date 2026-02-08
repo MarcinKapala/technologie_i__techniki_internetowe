@@ -1,0 +1,21 @@
+Jaki tekst wyświetlany jest obok etykiety Layer 7? HTTP
+
+Jakie informacje wyświetlone są w ponumerowanych krokach bezpośrednio poniżej pól In Layers i Out
+Layers? 
+The HTTP client receives a HTTP reply from the server. It displays the page in the web browser.
+Kliknij Next Layer. Powinna być podświetlona warstwa 4. Jaka jest wartość portu docelowego (Dest Port)?
+TCP SRC PORT: 80, DST PORT 1044
+Kliknij Next Layer. Powinna być podświetlona warstwa 3. Jaka jest wartość docelowego adresu IP (Dst
+IP)? 
+DEST IP: 192.168.1.10
+Kliknij Next Layer. Jakie informacje wyświetlone są na tej warstwie? 
+Ethernet II Header
+00D0.974E.894E>>0001.42A2.1384
+Jakie są wspólne informacje wymienione w sekcji IP szczegółów PDU (PDU Details) w porównaniu do
+informacji wymienionych w zakładce OSI Model? Z którą warstwą jest to związane?
+W layers 3 możemy znaleźć infomacje dotyczące Adresu Ip źródłowego i Adresu IP docelowego, te same infomacje sa w zakładce outbound w sekcji IP.
+Jakie są wspólne informacje wymienione w sekcji TCP szczegółów PDU (PDU Details) w porównaniu do
+informacji wymienionych w zakładce OSI Model? Z którą warstwą jest to związane?
+W layer 4 możemy znaleźć informacje dotyczące Portu docelowego i źródłowego, te same informacje znajdziemy w sekcji TCP.
+Jaka jest wartość pola Host wymienionego w sekcji HTTP szczegółów PDU (PDU Details)? Z którą
+warstwą z zakładki OSI Model będzie ta informacja związana?
