@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="mojFormularz">
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" required>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" required>
+
+            <button type="submit">Wyślij</button>
+        </form>
+        <div id="komunikat"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 8px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+document.getElementById('mojFormularz').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const imie = document.getElementById('imie').value;
+    const nazwisko = document.getElementById('nazwisko').value;
+    
+    const info = document.getElementById('komunikat');
+    info.innerText = `Cześć ${imie} ${nazwisko}! Formularz działa.`;
+    info.style.color = "green";
+});
