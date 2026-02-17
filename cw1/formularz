@@ -1,0 +1,9 @@
+<form>
+  <label for="imie">Imię:</label><br>
+  <input type="text" id="imie" name="imie"><br><br>
+
+  <label for="nazwisko">Nazwisko:</label><br>
+  <input type="text" id="nazwisko" name="nazwisko"><br><br>
+
+  <button type="submit">Wyślij</button>
+</form>
