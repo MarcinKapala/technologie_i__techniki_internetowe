@@ -1,1 +1,103 @@
+lenny2k@Mac IO % git init
+git config user.name "Marcin"    
+git config user.email "77523@student-afm.edu.pl"
+Reinitialized existing Git repository in /Users/lenny2k/Desktop/cwiczenia/IO/.git/
+lenny2k@Mac IO % nano main.cpp
+lenny2k@Mac IO % git status
+On branch main
 
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	main.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+lenny2k@Mac IO % git add main.cpp
+lenny2k@Mac IO % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   main.cpp
+
+lenny2k@Mac IO % git log
+fatal: your current branch 'main' does not have any commits yet
+lenny2k@Mac IO % git commit -m "Pierwszy program Hello World"
+[main (root-commit) 36662ce] Pierwszy program Hello World
+ 1 file changed, 2 insertions(+)
+ create mode 100644 main.cpp
+lenny2k@Mac IO % git log
+commit 36662cebffd686cd02bafe6fb14efa0952672852 (HEAD -> main)
+Author: Marcin <77523@student-afm.edu.pl>
+Date:   Fri Feb 20 21:55:25 2026 +0100
+
+    Pierwszy program Hello World
+lenny2k@Mac IO % open -e main.cpp
+lenny2k@Mac IO % git add .
+lenny2k@Mac IO % git add Struktura.cpp                                        
+git rm Struktura.cpp                                                    
+git commit -m                           
+fatal: pathspec 'Struktura.cpp' did not match any files
+fatal: pathspec 'Struktura.cpp' did not match any files
+error: switch `m' requires a value
+lenny2k@Mac IO % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   main.cpp
+
+lenny2k@Mac IO % nano main.cpp
+lenny2k@Mac IO % git add .
+lenny2k@Mac IO % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   main.cpp
+
+lenny2k@Mac IO % nano Struktura.cpp
+lenny2k@Mac IO % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   main.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Struktura.cpp
+
+lenny2k@Mac IO % git add .
+lenny2k@Mac IO % git commit -m "Dodanie pliku Struktura.cpp"
+[main 03e8b3b] Dodanie pliku Struktura.cpp
+ 2 files changed, 8 insertions(+)
+ create mode 100644 Struktura.cpp
+lenny2k@Mac IO % git status
+On branch main
+nothing to commit, working tree clean
+lenny2k@Mac IO % git status
+On branch main
+nothing to commit, working tree clean
+lenny2k@Mac IO % rm Struktura.cpp
+lenny2k@Mac IO % git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Struktura.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+lenny2k@Mac IO % git add .
+lenny2k@Mac IO % git commit -m "Usuniecie pliku Struktura.cpp"
+[main 042be76] Usuniecie pliku Struktura.cpp
+ 1 file changed, 6 deletions(-)
+ delete mode 100644 Struktura.cpp
+lenny2k@Mac IO % git status
+On branch main
+nothing to commit, working tree clean
+lenny2k@Mac IO % git remote add origin https://github.com/MarcinKapala/technologie_i__techniki_internetowe/blob/main/cw4/zad3
+git branch -M main     
+git push -u origin main
+fatal: repository 'https://github.com/MarcinKapala/technologie_i__techniki_internetowe/blob/main/cw4/zad3/' not found
+lenny2k@Mac IO % 
