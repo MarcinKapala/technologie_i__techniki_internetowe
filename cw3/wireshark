@@ -1,0 +1,39 @@
+CZĘŚĆ 1: Badanie lokalnych danych ICMP
+Krok 1: Adresy interfejsu mojego PC
+
+Adres IP: 192.168.1.15
+
+Adres MAC: 00:0C:29:44:A1:B2
+
+Krok 2: Badanie danych lokalnych 
+
+IP urządzenia lokalnego: 192.168.1.1
+
+MAC urządzenia lokalnego: E0:CB:4E:AA:BB:CC
+
+CZĘŚĆ 2: Badanie zdalnych danych ICMP (strona 9 w PDF)
+a. Przejrzyj przechwycone dane... wpisz docelowy adres IP i MAC dla trzech stron:
+
+1st Lokalizacja: https://www.google.com/search?q=google.com
+
+IP: 142.251.39.110
+
+MAC: E0:CB:4E:AA:BB:CC
+
+2nd Lokalizacja: facebook.com
+
+IP: 157.240.231.35
+
+MAC: E0:CB:4E:AA:BB:CC
+
+3rd Lokalizacja: cisco.com
+
+IP: 72.163.4.185
+
+MAC: E0:CB:4E:AA:BB:CC
+
+b. Co jest istotne w tej informacji?
+Istotne jest to, że mimo komunikacji z serwerami o różnych adresach IP, docelowy adres MAC w przechwyconych ramkach Ethernet pozostaje identyczny dla wszystkich trzech lokalizacji.
+
+c. Czym różni się ta informacja od informacji uzyskanej w części 2 (sieć lokalna)?
+W sieci lokalnej docelowy adres MAC odpowiadał fizycznemu adresowi karty sieciowej konkretnego urządzenia docelowego. W przypadku hostów zdalnych, adres MAC wskazuje zawsze na moją bramę domyślną (router), a nie na serwer końcowy.
