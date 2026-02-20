@@ -1,21 +1,62 @@
-Jaki tekst wyświetlany jest obok etykiety Layer 7? HTTP
+CZĘŚĆ 1: Badanie ruchu internetowego HTTP
+b. Jaki tekst wyświetlany jest obok etykiety Layer 7?
+HTTP
 
-Jakie informacje wyświetlone są w ponumerowanych krokach bezpośrednio poniżej pól In Layers i Out
-Layers? 
-The HTTP client receives a HTTP reply from the server. It displays the page in the web browser.
-Kliknij Next Layer. Powinna być podświetlona warstwa 4. Jaka jest wartość portu docelowego (Dest Port)?
-TCP SRC PORT: 80, DST PORT 1044
-Kliknij Next Layer. Powinna być podświetlona warstwa 3. Jaka jest wartość docelowego adresu IP (Dst
-IP)? 
-DEST IP: 192.168.1.10
-Kliknij Next Layer. Jakie informacje wyświetlone są na tej warstwie? 
-Ethernet II Header
-00D0.974E.894E>>0001.42A2.1384
-Jakie są wspólne informacje wymienione w sekcji IP szczegółów PDU (PDU Details) w porównaniu do
-informacji wymienionych w zakładce OSI Model? Z którą warstwą jest to związane?
-W layers 3 możemy znaleźć infomacje dotyczące Adresu Ip źródłowego i Adresu IP docelowego, te same infomacje sa w zakładce outbound w sekcji IP.
-Jakie są wspólne informacje wymienione w sekcji TCP szczegółów PDU (PDU Details) w porównaniu do
-informacji wymienionych w zakładce OSI Model? Z którą warstwą jest to związane?
-W layer 4 możemy znaleźć informacje dotyczące Portu docelowego i źródłowego, te same informacje znajdziemy w sekcji TCP.
-Jaka jest wartość pola Host wymienionego w sekcji HTTP szczegółów PDU (PDU Details)? Z którą
-warstwą z zakładki OSI Model będzie ta informacja związana?
+Jakie informacje wyświetlone są w ponumerowanych krokach bezpośrednio poniżej pól In Layers i Out Layers?
+
+The HTTP client sends a HTTP request to the server.
+
+c. Jaka jest wartość portu docelowego (Dest Port)?
+80
+
+d. Jaka jest wartość docelowego adresu IP (Dst IP)?
+192.168.1.2
+
+e. Jakie informacje wyświetlone są na tej warstwie?
+
+The next-hop IP address is a unicast. The ARP process looks it up in the ARP table.
+
+The next-hop IP address is in the ARP table. The ARP process sets the frame's destination MAC address to the one found in the table.
+
+The device encapsulates the PDU into an Ethernet frame.
+
+f. Jakie są wspólne informacje wymienione w sekcji IP szczegółów PDU w porównaniu do informacji wymienionych w zakładce OSI Model? Z którą warstwą jest to związane?
+Adres IP źródłowy (SRC IP) oraz docelowy (DEST IP). Jest to związane z warstwą 3 (Network).
+
+Jakie są wspólne informacje wymienione w sekcji TCP szczegółów PDU w porównaniu do informacji wymienionych w zakładce OSI Model? Z którą warstwą jest to związane?
+Numer portu źródłowego (SRC PORT) i portu docelowego (DEST PORT). Jest to związane z warstwą 4 (Transport).
+
+Jaka jest wartość pola Host wymienionego w sekcji HTTP szczegółów PDU? Z którą warstwą z zakładki OSI Model będzie ta informacja związana?
+Wartość to www.osi.local. Jest to związane z warstwą 7 (Application).
+
+h. Porównując informacje wyświetlane w kolumnie In Layers z tymi w kolumnie Out Layers, jakie są między nimi główne różnice?
+Adresy IP oraz numery portów są zamienione miejscami (źródło staje się celem i odwrotnie). Warstwa 7 w In Layers zawiera żądanie, a w Out Layers odpowiedź serwera.
+
+i. Jaka jest pierwsza linia wyświetlana w wiadomości HTTP?
+HTTP/1.1 200 OK
+
+j. Kliknij ostatni kolorowy kwadrat w kolumnie Info. Ile zakładek zostało wyświetlonych i dlaczego?
+Dwie: OSI Model oraz Inbound PDU Details. Dzieje się tak, ponieważ PC jest odbiorcą końcowym – odebrał dane (Inbound) i nie generuje już żadnej odpowiedzi (brak Outbound).
+
+CZĘŚĆ 2: Wyświetlenie elementów zestawu protokołów TCP/IP
+a. Jakie dodatkowe typy zdarzeń (Event Types) są wyświetlane?
+DNS, TCP oraz ewentualnie ARP.
+
+d. Jakie informacje podane są w sekcji NAME: DNS QUERY?
+www.osi.local
+
+e. Kliknij ostatni kolorowy kwadrat DNS Info na liście zdarzeń. Które urządzenie jest wyświetlane?
+PC-PT (lub Web Client).
+
+Jaka jest wartość wyświetlona obok ADDRESS: w sekcji DNS ANSWER zakładki (Inbound PDU Details)?
+192.168.1.2
+
+f. Napisz jakie informacje wyświetlone są w punkcie 4 i 5?
+4. The TCP connection is successful.
+5. The device sets the connection state to ESTABLISHED.
+
+g. Napisz jakie jest przeznaczenie tego zdarzenia (ostatnie zdarzenie TCP)?
+Zamknięcie połączenia (proces zakończenia sesji komunikacyjnej).
+
+g. Na podstawie informacji z Packet Tracer, jaki numer portu ma nasłuchujący żądań serwer WWW?
+80
